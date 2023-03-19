@@ -30,6 +30,10 @@ if(isset($_POST['submit'])){
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
+  <?php
+        include "navbar.php";
+  ?>
+
     <div class = "container my-5">
     <form method = "post">
      <div class="mb-3">
@@ -52,5 +56,8 @@ if(isset($_POST['submit'])){
          <button type="submit" class="btn btn-primary" name="submit">Submit</button>
     </form>
     </div>
+    <?php
+        include "footer.php";
+    ?>
   </body>
 </html>
